@@ -25,7 +25,7 @@ API课程期末项目产品文档
 | --- | --- | --- | --- |
 |[核心价值](#chapter1) |[产品结构](#chapter5)|[功能列表](#chapter8)|[时间与版本规划](#chapter12)|
 |[产品定位](#chapter2) |[信息结构](#chapter6)|[原型界面](#chapter9)|[成本预算](#chapter13)|
-|[产品特色](#chapter3) |[总体流程](#chapter7)|[数据流与界面](#chapter10)[风险对策](#chapter14)|
+|[产品特色](#chapter3) |[总体流程](#chapter7)|[数据流与界面](#chapter10)|[风险对策](#chapter14)|
 |[价值主张](#chapter4) |---------|[用例图](#chapter11)|--------|
 
 
