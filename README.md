@@ -50,7 +50,7 @@ APP融合图像识别、NLP技术的设计与机器学习的决策服务，将�
 
 <h3 id="chapter4">四、价值主张</h3>
 
-![价值主张画布](img/)
+![价值主张画布](img/Value_canvas.jpg)
 
 <h3 id="chapter5">五、产品结构</h3>
 
