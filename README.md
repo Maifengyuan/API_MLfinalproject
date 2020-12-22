@@ -56,4 +56,4 @@ APP融合图像识别、NLP技术的设计与机器学习的决策服务，将�
 
 **总体流程**
 
-![产品流程图](img/Flow_chart.jpg)
+![产品流程图](img/Flow_Chart.jpg)
