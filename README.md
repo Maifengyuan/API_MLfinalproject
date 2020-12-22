@@ -33,7 +33,7 @@ API课程期末项目产品文档
 ## 目录
 |产品介绍|产品架构|产品功能和需求|项目规划|
 | --- | --- | --- | --- |
-|[产品概述](#chapter1) |[产品结构](#chapter5)|[功能列表](#chapter8)|[时间与版本规划](#chapter12)|
+|[产品概述](#chapter1) |[功能结构](#chapter5)|[功能列表](#chapter8)|[时间与版本规划](#chapter12)|
 |[产品定位](#chapter2) |[信息结构](#chapter6)|[原型界面](#chapter9)|[成本预算](#chapter13)|
 |[产品特色](#chapter3) |[总体流程](#chapter7)|[数据流与界面](#chapter10)|[风险对策](#chapter14)|
 |[价值主张](#chapter4) |---------|[用例图](#chapter11)|[需求调研](#chapter15)|
@@ -56,15 +56,15 @@ APP融合图像识别、NLP技术的设计与机器学习的决策服务，将�
 
 
 ## 产品架构
-<h3 id="chapter5">五、产品结构</h3>
+<h3 id="chapter5">五、功能结构</h3>
 
 ![功能结构图](img/Functional_structure.jpg)
 
-<h3 id="chapter6">六、信息结构图</h3>
+<h3 id="chapter6">六、信息结构</h3>
 
 ![信息结构图](img/Information_structure.jpg)
 
-<h3 id="chapter7">七、总体流程图</h3>
+<h3 id="chapter7">七、总体流程</h3>
 
 ![产品流程图](img/Flow_Chart.jpg)
 
