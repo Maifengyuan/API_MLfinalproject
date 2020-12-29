@@ -85,17 +85,42 @@ API课程期末项目产品文档
 
 ## 产品功能
 
+
 <h3 id="chapter8">八、功能结构</h3>
 
 ![功能列表](img/Function_list.png)
 
 <br/>
 
-<h3 id="chapter9">九、数据流与界面</h3>
+<h3 id="chapter9">九、原型图</h3>
+
+<br/>
+
+<h3 id="chapter10">十、数据流与界面</h3>
 
 ![数据流程图](img/Data_flowchart.jpg)
 
+
+</br>
+## 项目规划
+
+<h3 id="chapter11">时间与版本规划</h3>
+</br>
+<h3 id="chapter12">成本预算</h3>
+</br>
+<h3 id="chapter13">风险对策</h3>
+</br>
+
+## 需求分析
+
+<h3 id="chapter14">需求调研</h3>
+</br>
+<h3 id="chapter15">用户评估</h3>
+</br>
+<h3 id="chapter16">竞品分析</h3>
+</br>
 <h3 id="chapter17">其他</h3>
+</br>
 
 #### 参考材料
 |来源|作者|标题|链接|
