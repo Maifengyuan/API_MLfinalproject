@@ -38,7 +38,7 @@ API课程期末项目产品文档
 |[产品概述](#chapter1) |[功能结构](#chapter5)|[功能列表](#chapter8)|[时间与版本规划](#chapter11)|[需求调研](#chapter14)|
 |[产品定位](#chapter2) |[信息结构](#chapter6)|[原型界面](#chapter9)|[成本预算](#chapter12)|[用户评估](#chapter15)|
 |[产品特色](#chapter3) |[总体流程](#chapter7)|[数据流与界面](#chapter10)|[风险对策](#chapter13)|[竞品分析](#chapter16)|
-|[价值主张](#chapter4) |---------|[用例图](#chapter11)|--------|[其他](#chapter17)|
+|[价值主张](#chapter4) |---------|[用例图](#chapter11)|[API加值分析](#chapter_key)|[其他](#chapter17)|
 </br>
 </br>
 
@@ -100,22 +100,38 @@ API课程期末项目产品文档
 
 ![数据流程图](img/Data_flowchart.jpg)
 
+<h3 id="#chapter_key">十一、API加值分析</h3>
 
 </br>
+
 ## 项目规划
 
 <h3 id="chapter11">时间与版本规划</h3>
+|版本|时间|详细|
+| --- | --- | --- |
+|s2.0|1月10日|完成产品文档（包括所有流程图，原型图的设计与代码测试）|
+|s2.0|1月14日|完成产品展示|
+
 </br>
 <h3 id="chapter12">成本预算</h3>
+
 </br>
 <h3 id="chapter13">风险对策</h3>
+
 </br>
 
 ## 需求分析
 
 <h3 id="chapter14">需求调研</h3>
+
 </br>
 <h3 id="chapter15">用户评估</h3>
+#### 用户画像
+
+#### 需求分析
+
+#### 情景假设-系统用例图
+
 </br>
 <h3 id="chapter16">竞品分析</h3>
 </br>
@@ -125,4 +141,4 @@ API课程期末项目产品文档
 #### 参考材料
 |来源|作者|标题|链接|
 | --- | --- | --- | --- |
-|环球网|秦璐敏|中国视障群体约1731万人 30岁以下年轻人占23.5%|https://china.huanqiu.com/article/9CaKrnKl9mV|
+|环球网|秦璐敏|《中国视障群体约1731万人 30岁以下年轻人占23.5%》|https://china.huanqiu.com/article/9CaKrnKl9mV|
