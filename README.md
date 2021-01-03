@@ -30,6 +30,7 @@ API课程期末项目产品文档
 |3|s1.2|麦锋源|2020-12-22|添加产品功能和信息结构图以及总体流程图|
 |4|s1.3|麦锋源|2020-12-23|添加功能列表|
 |5|s1.4|麦锋源|2020-12-29|添加数据流程图，完善产品特色|
+|6|s1.5|麦锋源|2021-1-3|对API应用平台进行实践分析，构建对比数据|
 </br>
 
 ## 目录
@@ -102,11 +103,37 @@ API课程期末项目产品文档
 
 <h3 id="chapter_key">十一、API加值分析</h3>
 
+#### 图像识别技术
+- 以百度和Azure两个平台图像识别API服务技术实践得出的比对结果
+
+|对比项|百度|Azure|
+|---|---|---|
+|代码示例|[百度-通用物体和场景识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[Azure-映像说明](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+|效果对比|对于字迹潦草的字体根本无法输出文字，仅使用与字体工整的手写字|对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
+|精确度对比|[2019-12-09刚刚推出最新版的api文档](https://ai.baidu.com/ai-doc/OCR/hk3h7y2qq)，调用方法和过程比较繁琐，没有给定参考代码，服务刚刚推出，处于起步阶段|[有详细的api调用文档及说明](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)，并且有相应开发语言的调用示例代码，服务较为成熟|
+|性价比衡量|每日 50000 次免费调用量，开通按量后付费。调用失败不计费[百度ai开放平台手写字api产品价格](https://ai.baidu.com/ai-doc/OCR/9k3h7xuv6)|免费次数为90天10万服务量，若是付费的话分为三个套餐，1万服务量350元/年；10万服务量3200/年；100万服务量30000元/年[讯飞开放平台手写字api](https://www.xfyun.cn/services/wordRecg)|
+|服务评估|仅有api文档且无示例代码，应用场景和参数不完整，无法进行进一步开发调用|[具有详细的说明](https://www.xfyun.cn/services/wordRecg)及[api调用教程](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E),且参数划分完整，提供业务参数，可扩展性强|
+
+- 总结：
+
+#### 文字转语音技术
+- 以百度和Azure两个平台文字转语音API服务技术实践得出的比对结果
+
+|对比项|百度|Azure|
+|---|---|---|
+|代码示例|[百度-语音识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[Azure-语音识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+|效果对比|对于字迹潦草的字体根本无法输出文字，仅使用与字体工整的手写字|对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
+|精确度对比|[2019-12-09刚刚推出最新版的api文档](https://ai.baidu.com/ai-doc/OCR/hk3h7y2qq)，调用方法和过程比较繁琐，没有给定参考代码，服务刚刚推出，处于起步阶段|[有详细的api调用文档及说明](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)，并且有相应开发语言的调用示例代码，服务较为成熟|
+|性价比衡量|每日 50000 次免费调用量，开通按量后付费。调用失败不计费[百度ai开放平台手写字api产品价格](https://ai.baidu.com/ai-doc/OCR/9k3h7xuv6)|免费次数为90天10万服务量，若是付费的话分为三个套餐，1万服务量350元/年；10万服务量3200/年；100万服务量30000元/年[讯飞开放平台手写字api](https://www.xfyun.cn/services/wordRecg)|
+|服务评估|仅有api文档且无示例代码，应用场景和参数不完整，无法进行进一步开发调用|[具有详细的说明](https://www.xfyun.cn/services/wordRecg)及[api调用教程](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E),且参数划分完整，提供业务参数，可扩展性强|
+
+- 总结：
+
 </br>
 
 ## 项目规划
 
-<h3 id="chapter11">时间与版本规划</h3>
+<h3 id="chapter11">十二、时间与版本规划</h3>
 
 |版本|时间|详细|
 | --- | --- | --- |
@@ -114,19 +141,19 @@ API课程期末项目产品文档
 |s2.0|1月14日|完成产品展示|
 
 </br>
-<h3 id="chapter12">成本预算</h3>
+<h3 id="chapter12">十三、成本预算</h3>
 
 </br>
-<h3 id="chapter13">风险对策</h3>
+<h3 id="chapter13">十四、风险对策</h3>
 
 </br>
 
 ## 需求分析
 
-<h3 id="chapter14">需求调研</h3>
+<h3 id="chapter14">十五、需求调研</h3>
 
 </br>
-<h3 id="chapter15">用户评估</h3>
+<h3 id="chapter15">十六、用户评估</h3>
 
 #### 用户画像
 
@@ -135,7 +162,7 @@ API课程期末项目产品文档
 #### 情景假设-系统用例图
 
 </br>
-<h3 id="chapter16">竞品分析</h3>
+<h3 id="chapter16">十七、竞品分析</h3>
 </br>
 <h3 id="chapter17">其他</h3>
 </br>
