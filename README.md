@@ -39,7 +39,7 @@ API课程期末项目产品文档
 |[产品概述](#chapter1) |[功能结构](#chapter5)|[功能列表](#chapter8)|[时间与版本规划](#chapter11)|[需求调研](#chapter14)|
 |[产品定位](#chapter2) |[信息结构](#chapter6)|[原型界面](#chapter9)|[成本预算](#chapter12)|[用户评估](#chapter15)|
 |[产品特色](#chapter3) |[总体流程](#chapter7)|[数据流与界面](#chapter10)|[风险对策](#chapter13)|[竞品分析](#chapter16)|
-|[价值主张](#chapter4) |---------|[用例图](#chapter11)|[API加值分析](#chapter_key)|[其他](#chapter17)|
+|[价值主张](#chapter4) |---------|[用例图](#chapter_case)|[API加值分析](#chapter_key)|[其他](#chapter17)|
 </br>
 </br>
 
@@ -101,7 +101,11 @@ API课程期末项目产品文档
 
 ![数据流程图](img/Data_flowchart.jpg)
 
-<h3 id="chapter_key">十一、API加值分析</h3>
+<h3 id="chapter_case">十一、用例图</h3>
+
+![内容浏览用例图](img/Use_Case_diagram.jpg)
+
+<h3 id="chapter_key">API加值分析</h3>
 
 #### 图像识别技术
 - 以百度和Azure两个平台图像识别API服务技术实践得出的比对结果
