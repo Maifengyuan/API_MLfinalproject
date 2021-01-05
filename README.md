@@ -19,7 +19,7 @@ API课程期末项目产品文档
 |文件状态|正在修改|
 |当前版本|s1.0|
 |作者|麦锋源|
-|最后修订日期|2020-12-22|
+|最后修订日期|2021-01-05|
 </br>
 
 ## 版本信息
@@ -31,6 +31,7 @@ API课程期末项目产品文档
 |4|s1.3|麦锋源|2020-12-23|添加功能列表|
 |5|s1.4|麦锋源|2020-12-29|添加数据流程图，完善产品特色|
 |6|s1.5|麦锋源|2021-1-3|对API应用平台进行实践分析，构建对比数据|
+|7|s1.6|麦锋源|2021-1-5|添加用户浏览社区内容用例图|
 </br>
 
 ## 目录
@@ -101,9 +102,13 @@ API课程期末项目产品文档
 
 ![数据流程图](img/Data_flowchart.jpg)
 
+<br/>
+
 <h3 id="chapter_case">十一、用例图</h3>
 
 ![内容浏览用例图](img/Use_Case_diagram.jpg)
+
+<br/>
 
 <h3 id="chapter_key">API加值分析</h3>
 
@@ -112,7 +117,8 @@ API课程期末项目产品文档
 
 |对比项|百度|Azure|
 |---|---|---|
-|代码示例|[百度-通用物体和场景识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[Azure-映像说明](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+|代码示例-语音技术：文本转语音|[百度-语言合成](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[Azure-语言服务](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+|代码示例-计算机视觉：图像识别技术|[百度-通用物体和场景识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[Azure-映像说明](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
 |效果对比|对于字迹潦草的字体根本无法输出文字，仅使用与字体工整的手写字|对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
 |精确度对比|[2019-12-09刚刚推出最新版的api文档](https://ai.baidu.com/ai-doc/OCR/hk3h7y2qq)，调用方法和过程比较繁琐，没有给定参考代码，服务刚刚推出，处于起步阶段|[有详细的api调用文档及说明](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)，并且有相应开发语言的调用示例代码，服务较为成熟|
 |性价比衡量|每日 50000 次免费调用量，开通按量后付费。调用失败不计费[百度ai开放平台手写字api产品价格](https://ai.baidu.com/ai-doc/OCR/9k3h7xuv6)|免费次数为90天10万服务量，若是付费的话分为三个套餐，1万服务量350元/年；10万服务量3200/年；100万服务量30000元/年[讯飞开放平台手写字api](https://www.xfyun.cn/services/wordRecg)|
