@@ -60,9 +60,9 @@ API课程期末项目产品文档
 </br>
 </br>
 
-<h3 id="chapter4">四、价值主张</h3>
+<h3 id="chapter4">四、价值主张（用户画像）</h3>
 
-![价值主张画布](img/Value_canvas.jpg)
+![用户画像](img/User_portrait.png)
 
 </br>
 
