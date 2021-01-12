@@ -127,7 +127,7 @@ API课程期末项目产品文档
 
 <h4>场景识别实践结果</h4>
 
-![分析场景：教学楼与过道](img/ptest05.jpg)
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/ptest05.jpg" width="500" height="450" alt="场景识别材料"></div>
 
 1. 百度场景识别API返回参数
 
@@ -188,7 +188,7 @@ API课程期末项目产品文档
 
 <h4>物体识别实践结果</h4>
 
-![分析物体：书桌上的电脑、耳机和鼠标](img/stest02.jpg)
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/stest02.jpg" width="500" height="350" alt="物体识别材料"></div>
 
 1. 百度物体识别API返回参数
 
@@ -241,7 +241,7 @@ API课程期末项目产品文档
 
 - 总结：利用场景/物体识别API的最终目的是将正常视觉所能传达的信息以语音描述的方式完美呈现给视障人群，所以对API最基础的衡量首先需要看图片内容识别的匹配程度，结合场景与物体识别，以基础的API调用测试，两个平台的的准确率相差甚少，但百度API做了更加细分的处理，在对主题目标进行识别后，还进行了细分标签的判断，例如将建筑具体到剧院/博物馆/礼堂。这一点上百度API占优势。物体识别两个平台的准确率较为相似，但实践中只对百度对通用物体和场景的API功能进行调用，此外百度提供的识别还包括很多细分类别，这一点上百度显然投入更多，相比较与讯飞更有优势。
 
-<img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/baidu.jpg" width="500" height="300" alt="百度图像识别功能列表"/>
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/baidu.jpg" width="500" height="300" alt="百度图像识别功能列表"></div>
 
 <br/>
 
