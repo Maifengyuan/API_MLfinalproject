@@ -119,7 +119,7 @@ API课程期末项目产品文档
 
 |对比项|百度|讯飞|
 |---|---|---|
-|代码示例-图像识别技术：场景与物体识别|[百度api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E9%80%9A%E7%94%A8%E7%89%A9%E4%BD%93%E5%92%8C%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB.ipynb)|[讯飞api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E8%AE%AF%E9%A3%9E-%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%89%A9%E4%BD%93%E8%AF%86%E5%88%AB.ipynb)|
+|代码示例-图像识别技术：场景与物体识别|[百度api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E9%80%9A%E7%94%A8%E7%89%A9%E4%BD%93%E5%92%8C%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB.ipynb)|[讯飞api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E8%AE%AF%E9%A3%9E-%E5%9C%BA%E6%99%AF-%E7%89%A9%E4%BD%93-%E5%9C%BA%E6%89%80%E8%AF%86%E5%88%AB.ipynb)|
 
 <h4>场景识别实践结果</h4>
 
@@ -277,6 +277,11 @@ API课程期末项目产品文档
 #### 关于作者的一些话和展望
 这次的文档我参考了很多专业的产品文档与过去学长/学姐的案例，相比他们我在文档中增加了很多文字阐述，我认为自己的优势是绘制流程图，这一方面我有提前做过很多功课，所以上手和流程思维会稍快一些。这使得文档整体的呈现风格偏故事化，这有违与规范的产品文档。但作为课程实践，我认为这样有利于运用自己的所学所想去表达产品思维，我更希望将这作为一个作品展示。<br/>
 不过纵观自己的产品文档，也有不少缺陷：
+
+- 工具运用：
+1. [会议桌](https://app.huiyizhuo.com/login?redirect=https%3A%2F%2Fapp.huiyizhuo.com%2F)
+2. [Process On](https://www.processon.com/)
+3. Azure
 
 #### 参考材料
 |来源|作者|标题|链接|
