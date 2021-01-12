@@ -33,6 +33,7 @@ API课程期末项目产品文档
 |6|s1.5|麦锋源|2021-1-3|对API应用平台进行实践分析，构建对比数据|
 |7|s1.6|麦锋源|2021-1-5|添加用户浏览社区内容用例图|
 |8|s1.7|麦锋源|2021-1-10|将价值主张画布更改为用户画像，添加API代码示例：通用物体与场景识别|
+|9|s1.8|麦锋源|2021-1-11|完善图像识别技术api的代码示例对比|
 </br>
 
 ## 目录
@@ -118,10 +119,100 @@ API课程期末项目产品文档
 
 |对比项|百度|讯飞|
 |---|---|---|
-|代码示例-语音技术：场景识别|[百度-场景识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[讯飞-场景识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
-|代码示例-物体识别：图像识别技术|[百度-通用物体识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E7%99%BE%E5%BA%A6%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|[讯飞-物体识别](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
-|效果对比|对于字迹潦草的字体根本无法输出文字，仅使用与字体工整的手写字|对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
-|精确度对比|[2019-12-09刚刚推出最新版的api文档](https://ai.baidu.com/ai-doc/OCR/hk3h7y2qq)，调用方法和过程比较繁琐，没有给定参考代码，服务刚刚推出，处于起步阶段|[有详细的api调用文档及说明](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)，并且有相应开发语言的调用示例代码，服务较为成熟|
+|代码示例-图像识别技术：场景与物体识别|[百度api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E9%80%9A%E7%94%A8%E7%89%A9%E4%BD%93%E5%92%8C%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB.ipynb)|[讯飞api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E8%AE%AF%E9%A3%9E-%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%89%A9%E4%BD%93%E8%AF%86%E5%88%AB.ipynb)|
+
+<h4>场景识别实践结果</h4>
+
+![分析场景：教学楼与过道](img/ptest05.jpg)
+
+1. 百度场景识别API
+
+```
+{'log_id': 5712521386408023851,
+ 'result_num': 5,
+ 'result': [{'score': 0.358338, 'root': '建筑-其他', 'keyword': '居民楼'},
+  {'score': 0.253114, 'root': '自然风景-天空', 'keyword': '天空'},
+  {'score': 0.17113, 'root': '建筑-现代建筑', 'keyword': '剧院/博物馆/礼堂'},
+  {'score': 0.088515, 'root': '自然风景-其他', 'keyword': '风景'},
+  {'score': 0.006694, 'root': '植物-树', 'keyword': '树'}]}
+```
+
+2. 讯飞场景识别API
+
+```
+{'code': 0,
+ 'data': {'fileList': [{'label': 9,
+    'labels': [9, 3, 11, 18, 10],
+    'name': 'test01.jpg',
+    'rate': 0.9986672401428223,
+    'rates': [0.9986672401428223,
+     0.0010075508616864681,
+     0.0002714783186092973,
+     3.254865441704169e-05,
+     1.3011311239097267e-05],
+    'review': False}],
+  'reviewCount': 0,
+  'topNStatistic': [{'count': 1, 'label': 9}]},
+ 'desc': 'success',
+ 'sid': 'tup000011d5@dxb9d81358500b000100'}
+```
+
+|参数|返回值|说明|
+| --- | --- | --- |
+|label|9| 对应场景：山峰|
+|labels|9,3,11,18,10|表示前5个最可能场景的label，分别是山峰，草地，森林，其他场景，湖|
+|rate|0.99|介于0-1间的浮点数，表示该图像被识别为某个分类的概率值，概率越高、机器越肯定|
+|rates|0.99,0.001,0.0002,3.25,1.3|labels对应，前5个最可能场景对应得分|
+|review|False|返回true时存在偏差，可信度较低，返回false时可信度较高|
+
+![分析物体：书桌上的电脑、耳机和鼠标](img/stest02.jpg)
+
+1. 百度物体识别API
+
+```
+{'log_id': 6639343850218473740,
+ 'result_num': 5,
+ 'result': [{'score': 0.31101, 'root': '商品-电脑办公', 'keyword': '笔记本电脑'},
+  {'score': 0.230072, 'root': '商品-数码产品', 'keyword': '台式电脑'},
+  {'score': 0.155608, 'root': '商品-家用电器', 'keyword': '音箱'},
+  {'score': 0.076702, 'root': '商品-电脑办公', 'keyword': '键盘'},
+  {'score': 0.001803, 'root': '商品-电脑办公', 'keyword': '电脑'}]}
+```
+
+2. 讯飞物体识别API
+
+```
+{'code': 0,
+ 'data': {'fileList': [{'label': 19903,
+    'labels': [19903, 18881, 1314, 4760, 3042],
+    'name': 'stest02.jpg',
+    'rate': 0.26318418979644775,
+    'rates': [0.26318418979644775,
+     0.043663863092660904,
+     0.03755110874772072,
+     0.027026833966374397,
+     0.023022780194878578],
+    'review': True}],
+  'reviewCount': 1,
+  'topNStatistic': [{'count': 1, 'label': 19903}]},
+ 'desc': 'success',
+ 'sid': 'tup000011dc@dx680d13585d5b1aba00'}
+```
+
+|参数|返回值|说明|
+| --- | --- | --- |
+|label|19903| 对应物体：老鼠；分类：物品|
+|labels|19903, 18881, 1314, 4760, 3042|表示前5个最可能场景的label，分别是老鼠，笔记本，无线局域网络，外围设备，计算机鼠标|
+|rate|0.26|介于0-1间的浮点数，表示该图像被识别为某个分类的概率值，概率越高、机器越肯定|
+|rates|0.26,0.043,0.037,0.027,0.023|labels对应，前5个最可能场景对应得分|
+|review|True|返回true时存在偏差，可信度较低，返回false时可信度较高|
+
+<br/>
+
+|实践结果分析|百度|讯飞|
+|---|---|---|
+|效果对比：场景识别||对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
+|效果对比：物体识别|对于字迹潦草的字体根本无法输出文字，仅使用与字体工整的手写字|对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
 |性价比衡量|每日 50000 次免费调用量，开通按量后付费。调用失败不计费[百度ai开放平台手写字api产品价格](https://ai.baidu.com/ai-doc/OCR/9k3h7xuv6)|免费次数为90天10万服务量，若是付费的话分为三个套餐，1万服务量350元/年；10万服务量3200/年；100万服务量30000元/年[讯飞开放平台手写字api](https://www.xfyun.cn/services/wordRecg)|
 |服务评估|仅有api文档且无示例代码，应用场景和参数不完整，无法进行进一步开发调用|[具有详细的说明](https://www.xfyun.cn/services/wordRecg)及[api调用教程](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E),且参数划分完整，提供业务参数，可扩展性强|
 
