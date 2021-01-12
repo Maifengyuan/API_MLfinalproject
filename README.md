@@ -19,7 +19,7 @@ API课程期末项目产品文档
 |文件状态|正在修改|
 |当前版本|s1.0|
 |作者|麦锋源|
-|最后修订日期|2021-01-05|
+|最后修订日期|2021-01-12|
 </br>
 
 ## 版本信息
@@ -126,8 +126,6 @@ API课程期末项目产品文档
 |代码示例-图像识别技术：场景与物体识别|[百度api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E9%80%9A%E7%94%A8%E7%89%A9%E4%BD%93%E5%92%8C%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB.ipynb)|[讯飞api代码示例](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E8%AE%AF%E9%A3%9E-%E5%9C%BA%E6%99%AF-%E7%89%A9%E4%BD%93-%E5%9C%BA%E6%89%80%E8%AF%86%E5%88%AB.ipynb)|
 
 <h4>场景识别实践结果</h4>
-
-<img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/baidu.jpg" width="200" height="200" alt="微信小程序"/>
 
 ![分析场景：教学楼与过道](img/ptest05.jpg)
 
@@ -242,6 +240,8 @@ API课程期末项目产品文档
 |服务评估|仅有api文档且无示例代码，应用场景和参数不完整，无法进行进一步开发调用|[具有详细的说明](https://www.xfyun.cn/services/wordRecg)及[api调用教程](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E),且参数划分完整，提供业务参数，可扩展性强|
 
 - 总结：利用场景/物体识别API的最终目的是将正常视觉所能传达的信息以语音描述的方式完美呈现给视障人群，所以对API最基础的衡量首先需要看图片内容识别的匹配程度，结合场景与物体识别，以基础的API调用测试，两个平台的的准确率相差甚少，但百度API做了更加细分的处理，在对主题目标进行识别后，还进行了细分标签的判断，例如将建筑具体到剧院/博物馆/礼堂。这一点上百度API占优势。物体识别两个平台的准确率较为相似，但实践中只对百度对通用物体和场景的API功能进行调用，此外百度提供的识别还包括很多细分类别，这一点上百度显然投入更多，相比较与讯飞更有优势。
+
+<img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/baidu.jpg" width="500" height="300" alt="百度图像识别功能列表"/>
 
 <br/>
 
