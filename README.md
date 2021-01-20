@@ -90,7 +90,7 @@ API课程期末项目产品文档
 
 <h3 id="chapter7">七、总体流程</h3>
 
-<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Flow_Chart.jpg" width="600" height="700" alt="总体流程"></div>
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Flow_Chart.jpg" width="700" height="800" alt="总体流程"></div>
 
 </br>
 
@@ -111,7 +111,7 @@ API课程期末项目产品文档
 
 <h3 id="chapter10">十、数据流与界面</h3>
 
-![数据流程图](img/Data_flowchart.jpg)
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Data_flowchart.jpg" width="400" height="800" alt="数据流"></div>
 
 <br/>
 
