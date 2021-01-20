@@ -104,7 +104,7 @@ API课程期末项目产品文档
 
 <h3 id="chapter9">九、原型图</h3>
 
-<iframe src="https://modao.cc/app/f83ebdfdc74e882f158a6cfadd000e95d9ba5d4a/embed/v2" allowTransparency="true" frameborder="0">原型图在线浏览</iframe>
+[产品原型图在线浏览](https://modao.cc/app/f83ebdfdc74e882f158a6cfadd000e95d9ba5d4a/embed/v2)
 
 <br/>
 
