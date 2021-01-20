@@ -35,6 +35,7 @@ API课程期末项目产品文档
 |8|s1.7|麦锋源|2021-1-10|将价值主张画布更改为用户画像，添加API代码示例：通用物体与场景识别|
 |9|s1.8|麦锋源|2021-1-11|完善图像识别技术api的代码示例对比|
 |10|s1.9|麦锋源|2021-1-16|添加智能API加值说明|
+|11|s2.0|麦锋源|2021-1-20|添加原型图链接|
 </br>
 
 ## 目录
@@ -102,6 +103,8 @@ API课程期末项目产品文档
 <br/>
 
 <h3 id="chapter9">九、原型图</h3>
+
+<iframe src="https://modao.cc/app/f83ebdfdc74e882f158a6cfadd000e95d9ba5d4a/embed/v2" allowTransparency="true" frameborder="0">原型图在线浏览</iframe>
 
 <br/>
 
