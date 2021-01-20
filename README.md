@@ -117,7 +117,7 @@ API课程期末项目产品文档
 
 <h3 id="chapter_case">十一、用例图</h3>
 
-![内容浏览用例图](img/Use_Case_diagram.jpg)
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Use_Case.jpg" width="700" height="800" alt="用例图"></div>
 
 <br/>
 
