@@ -77,13 +77,13 @@ API课程期末项目产品文档
 ## 数据架构
 <h3 id="chapter5">五、功能结构</h3>
 
-<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Functional_str.jpg" width="450" height="700" alt="功能结构"></div>
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Functional_str.jpg" width="450" height="750" alt="功能结构"></div>
 
 </br>
 
 <h3 id="chapter6">六、信息结构</h3>
 
-<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Information_str.jpg" width="450" height="800" alt="信息结构"></div>
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Information_str.jpg" width="450" height="850" alt="信息结构"></div>
 
 
 </br>
@@ -117,7 +117,7 @@ API课程期末项目产品文档
 
 <h3 id="chapter_case">十一、用例图</h3>
 
-<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Use_Case.jpg" width="700" height="800" alt="用例图"></div>
+<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Use_Case.jpg" width="750" height="800" alt="用例图"></div>
 
 <br/>
 
