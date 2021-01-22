@@ -130,6 +130,8 @@ API课程期末项目产品文档
 
 [产品原型图在线浏览](https://modao.cc/app/f83ebdfdc74e882f158a6cfadd000e95d9ba5d4a/embed/v2)
 
+![原型界面设计](img/Interface_design.jpg)
+
 <br/>
 
 <h3 id="chapter10">十、数据流与界面</h3>
