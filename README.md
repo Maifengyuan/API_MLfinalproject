@@ -140,18 +140,6 @@ API课程期末项目产品文档
 
 <br/>
 
-<h3 id="chapter_case">十一、用例图</h3>
-
-#### 使用情境说明
-“看见APP”的使用情境涵盖视障群体的日常生活，包括社交、出行、导航、记录生活等。下方用例图主要以两个使用情境做具体说明：
-<br/>
-1. 用户从注册成为应用的浏览者到内容的创作者的过程；
-2. 用户通过APP寻求帮助，达到方便规划出行的目的。
-
-<div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Use_Case.jpg" width="750" height="800" alt="用例图"></div>
-
-<br/>
-
 <h3 id="chapter_key">API加值分析</h3>
 
 产品结合图像识别、语言合成等智能API，进一步简化用户在使用产品时所需要操作步骤，通过简单的指控，智能语音系统与对用户的脸部识别完成登入、浏览、分析等功能，最大程度满足无障碍使用体验。
