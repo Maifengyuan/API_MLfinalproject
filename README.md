@@ -20,7 +20,7 @@ API课程期末项目产品文档
 |当前版本|s1.0|
 |作者|麦锋源|
 |最后修订日期|2021-01-22|
-|展示视频|[智能APP加值产品报告](https://www.bilibili.com/video/BV1tV411q7V8/)|
+|展示视频|[智能APP加值产品报告](https://www.bilibili.com/video/BV1tV411q7V8/)；[原型交互视频](https://pan.baidu.com/s/1BtCCNX1Z1OjBrKPxmQRIOQ)网盘提取码: 8jet |
 </br>
 
 ## 文档版本信息
