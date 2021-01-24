@@ -321,7 +321,7 @@ APP以提高视障群体的生活品质为主要目标，在公益方面会达�
 
 |对比项|百度|讯飞|
 |---|---|---|
-|代码示例|[百度-NLP](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.ipynb)|[讯飞-NLP](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+|代码示例：自然语言处理（NLP）|[百度-NLP](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.ipynb)|[讯飞-NLP](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E8%AE%AF%E9%A3%9E-NLP%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5.ipynb)|
 
 
 > 功能涵盖：文本标签、文本分类、文本纠错、摘要提取、情感分析、发布者地址识别
