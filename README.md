@@ -146,7 +146,7 @@ APP所使用的关键API加值有明确的使用目标和领域，针对图像�
 
 <br/>
 
-<h3 id="chapter10">加值输出与智能交互</h3>
+<h3 id="chapter10">十一、加值输出与智能交互</h3>
 
 ### 数据流程分析
 
@@ -171,13 +171,13 @@ APP以提高视障群体的生活品质为主要目标，在公益方面会达�
 
 ### 更多产品图表
 
-<h3 id="chapter5">五、功能结构</h3>
+#### 功能结构
 
 <div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Functional_str.jpg" width="450" height="750" alt="功能结构"></div>
 
 ***
 
-<h3 id="chapter6">六、信息结构</h3>
+#### 信息结构
 
 <div align=center><img src="https://github.com/Maifengyuan/API_MLfinalproject/blob/main/img/Information_str.jpg" width="450" height="850" alt="信息结构"></div>
 
@@ -185,7 +185,7 @@ APP以提高视障群体的生活品质为主要目标，在公益方面会达�
 </br>
 
 
-<h3 id="chapter_key">API加值分析</h3>
+<h3 id="chapter_key">十二、API加值分析</h3>
 
 产品结合图像识别、语言合成等智能API，进一步简化用户在使用产品时所需要操作步骤，通过简单的指控，智能语音系统与对用户的脸部识别完成登入、浏览、分析等功能，最大程度满足无障碍使用体验。
 
@@ -316,34 +316,113 @@ APP以提高视障群体的生活品质为主要目标，在公益方面会达�
 
 <br/>
 
-#### 文字转语音技术
-- 以百度和讯飞两个平台文字转语音API服务技术实践得出的比对结果
+#### 文本处理技术
+- 以百度和讯飞两个平台API服务技术实践得出的比对结果
 
 |对比项|百度|讯飞|
 |---|---|---|
-|代码示例|[百度-语音合成](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.ipynb)|[讯飞-语音合成](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+|代码示例|[百度-NLP](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E7%99%BE%E5%BA%A6-%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90.ipynb)|[讯飞-NLP](https://github.com/zhengxiaopingzxp/API_ML_PM_Final_Project/blob/master/code/%E8%AE%AF%E9%A3%9E%E6%89%8B%E5%86%99%E5%AD%97api.ipynb)|
+
+
+> 功能涵盖：文本标签、文本分类、文本纠错、摘要提取、情感分析、发布者地址识别
 
 <h4>语言合成实践结果</h4>
+以下主要通过文本纠错以及情感分析做功能分析，其余内容请通过上方的代码链接查看详情
 
-> 分析文本 Text = "又是平静的一天，我只想过普通人的生活"
+1. 百度-NLP返回参数
 
-1. 百度语音合成API返回参数
+- 文本纠错
 
-[百度-语音合成返回结果音频存放地址](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E5%90%89%E8%89%AF%E5%90%89%E5%BD%B1.mp3)
+```
+result03 = baidu_amend(text="明明明白白白的原因，但明明就想让白白把事情说的明明白白")
+result03gbk = str(result03,encoding="GBK")
+result03dict =json.loads(result03gbk)
+result03dict
+```
+```
+{'log_id': 2247225581012071484,
+ 'item': {'vec_fragment': [{'ori_frag': '的',
+    'begin_pos': 44,
+    'correct_frag': '得',
+    'end_pos': 46}],
+  'score': 2.20157,
+  'correct_query': '明明明白白白的原因，但明明就想让白白把事情说得明明白白'},
+ 'text': '明明明白白白的原因，但明明就想让白白把事情说的明明白白'}
+```
 
-2. 讯飞语音合成API返回参数
+这里故意刁难了下纠错功能，但API仍然从复杂难懂的语句中抽出了错误用词（vec_fragment），将“的”改正为“得”
 
-[讯飞-语音合成返回结果音频存放地址](https://github.com/Maifengyuan/API_MLfinalproject/blob/main/code/%E5%90%89%E8%89%AF%E5%90%89%E5%BD%B1.mp3)
+***
+
+- 情感分析
+```
+result06 = baidu_sentiment(text="我不送彩礼，丈母娘不高兴了，我送彩礼，媳妇不独立了，我都不知道该保大还是保小？")
+result06gbk = str(result06,encoding="GBK")
+result06dict =json.loads(result06gbk)
+result06dict
+```
+```
+{'log_id': 6752814638925151352,
+ 'text': '我不送彩礼，丈母娘不高兴了，我送彩礼，媳妇不独立了，我都不知道该保大还是保小？',
+ 'items': [{'positive_prob': 0.00176568,
+   'confidence': 0.996076,
+   'negative_prob': 0.998234,
+   'sentiment': 0}]}
+```
+
+|参数|描述|结果说明|
+| --- | --- | --- |
+|log_id|请求唯一标识码|6752814638925151352|
+|sentiment|表示情感极性分类结果，0:负向，1:中性，2:正向|负向|
+|confidence|表示分类的置信度，取值范围[0,1]||0.99，置信度高|
+|positive_prob|表示属于积极类别的概率 ，取值范围[0,1]|0.99|
+|negative_prob|表示属于消极类别的概率，取值范围[0,1]|0.001|
+
+2. 讯飞-NLP返回参数（输入内容与百度NLP相同）
+- 文本纠错
+```
+response==>>
+{"header":{"code":0,"message":"success","sid":"ase000e57ed@hu17732669b6f0210882"},"payload":{"result":{"compress":"raw","encoding":"utf8","format":"json","seq":"0","status":"3","text":"eyJjaGFyIjogW10sICJ3b3JkIjogW10sICJyZWR1bmQiOiBbWzMsICLnmb0iLCAiIiwgInJlZHVuZCJdXSwgIm1pc3MiOiBbXSwgIm9yZGVyIjogW10sICJkYXBlaSI6IFtdLCAicHVuYyI6IFtdLCAiaWRtIjogW10sICJvcmciOiBbXSwgImxlYWRlciI6IFtdLCAibnVtYmVyIjogW119"}}}
+text==>>
+{"char": [], "word": [], "redund": [[3, "白", "", "redund"]], "miss": [], "order": [], "dapei": [], "punc": [], "idm": [], "org": [], "leader": [], "number": []}
+```
+
+|参数|描述|结果说明|
+| --- | --- | --- |
+|char/word|别字纠错|无|
+|redund|语法纠错-冗余：[2, ‘CD’, ‘R’, ‘redund’]] --> [位置，原文本，纠错后文本，类型] |删除第三个“白”|
+|miss|语法纠错-缺失|无|
+|order|语法纠错-乱序|无|
+|dapei|搭配纠错|无|
+|punc|标点纠错|无|
+|idm|成语纠错|无|
+|org|机构名纠错|无|
+|leader|领导人职称纠错|无|
+|number|数字纠错|无|
+
+***
+
+- 情感分析
+
+```
+{"code":"0","data":{"score":0.1486,"sentiment":-1},"desc":"success","sid":"ltp0079c9ee@dx65e5136833261aba00"}
+```
+
+|参数|描述|结果说明|
+| --- | --- | --- |
+|score|分类对应得分，范围 0-1|0.14|
+|sentiment|情感极性分类结果，0：中性；1：褒义；-1：贬义|贬义|
 
 <br/>
 
 |实践结果分析|百度|讯飞|
 |---|---|---|
-|效果对比|对于字迹潦草的字体根本无法输出文字，仅使用与字体工整的手写字|对于字迹潦草的字体，仍然能给出部分输出文字，相比百度而已文字的识别准确度也比较高，可查看代码对比|
+|效果对比|在文本纠错上，使用了较难理解的话来衡量两种NLP对于文本的细节处理，结果显示百度准确率略高。在情感分析上都能识别出偏负面的情感，差异不大。但讯飞NLP对于文本纠错的分析上涵盖的内容要比百度NLP多，潜力更大|
 |性价比衡量|每日 50000 次免费调用量，开通按量后付费。调用失败不计费[百度ai开放平台手写字api产品价格](https://ai.baidu.com/ai-doc/OCR/9k3h7xuv6)|免费次数为90天10万服务量，若是付费的话分为三个套餐，1万服务量350元/年；10万服务量3200/年；100万服务量30000元/年[讯飞开放平台手写字api](https://www.xfyun.cn/services/wordRecg)|
 |服务评估|仅有api文档且无示例代码，应用场景和参数不完整，无法进行进一步开发调用|[具有详细的说明](https://www.xfyun.cn/services/wordRecg)及[api调用教程](https://www.xfyun.cn/doc/words/wordRecg/API.html#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E),且参数划分完整，提供业务参数，可扩展性强|
 
 - 总结：
+因为应用需要不断将语音内容和文本内容进行转换，所以对于文本分析的准确性来说十分重要，因为服务用于用户的日常生活，所以即使是绕口令也要保证精确，从对比结果的分析得出，百度NLP技术对于语言的把握性更强，但对于后期的内容分析，讯飞提供的数据会更加多样化，除去近似的产品性价比，讯飞未来运用的潜力会更大，有助于减少人工的分析。
 
 </br>
 
